@@ -1,0 +1,10 @@
+{
+    "CHANNEL_ID": "",
+    "SLACK_TOKEN": "",
+    "WEBSITE_REPO": "",
+    "RESIZE_IMAGES": true,
+    "GITHUB_REPO_NAME": "",
+    "GITHUB_REPO_OWNER": "",
+    "OCTOKIT_TOKEN": "",
+    "PORT": 9000
+}

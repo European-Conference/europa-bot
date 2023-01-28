@@ -1,0 +1,23 @@
+{
+    "name": "europa-bot",
+    "version": "1.0.0",
+    "description": "A slack bot server that updates euroconf.eu",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "@octokit/rest": "^19.0.7",
+        "@slack/web-api": "^6.8.0",
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "forever": "^4.0.3",
+        "fs": "^0.0.1-security",
+        "fs-extra": "^11.1.0",
+        "jimp": "^0.16.2",
+        "path": "^0.12.7",
+        "request": "^2.88.2",
+        "simple-git": "^3.16.0",
+        "simple-git-promise": "^1.2.1"
+    }
+}
