@@ -128,7 +128,7 @@ let slack_thread_message = async (message, thread_ts) => {
 
 let slack_error = async (e, thread_ts) => {
     slack_thread_message(
-        `Hi, human. I'm having trouble understanding your message above. The following parsing error occurred: \n\n${e}`,
+        `Hi, human. I'm having trouble understanding your message above. The following parsing error occurred: \n\n${e}\n\nPlease fix your message and try again (post a new message, don't edit the old one).`,
         thread_ts);
 };
 
@@ -214,6 +214,11 @@ app.post('/events', async (req, res) => {
     }
 
     console.log(`Message content is ${event.text}`);
+
+    if (event.text.includes("```")) {
+        slack_error("I can't parse code blocks: your message contained\n```code blocks```\n instead of plain text.", event.ts);
+        return;
+    }
 
     try {
         var speaker = await extract_speaker(event);
