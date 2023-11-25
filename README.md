@@ -13,7 +13,7 @@ name: Joe Biden
 role: President of the United States
 type: speaker
 
-Add a bio: Joe Biden is the 46th president of the United States. He was formerly vice president in the Obama administration from 2009 to 2018. Prior to that, President Biden served as a senator...
+Joe Biden is the 46th president of the United States. He was formerly vice president in the Obama administration from 2009 to 2018. Prior to that, President Biden served as a senator...
 ```
 
 **Attach** (e.g. drag and drop) **an image to your message**, and send it. You’re done!
